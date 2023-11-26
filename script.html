@@ -197,8 +197,40 @@
           document.write("Error: Unable to Find the current Day");
           break;
       }
+      document.write("<br>");
 
-      
+      /*Write a JavaScript Program that has stored weekdays in an Array. Display the weekdays name using
+for/while/do...while and for...of loop. Make sure to add appropriate comments each of the loop used. */
+
+    // Using for loop
+        var weekdays = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+        for (let i = 0; i < weekdays.length; i++) {
+             document.write(weekdays[i]);
+            
+        }
+        document.write("<br>");
+    // Using while loop
+        var i = 0
+        while (i < weekdays.length) {
+            document.write(weekdays[i]);
+            i++;
+        }
+
+        document.write("<br>");
+    // Using Do While loop
+          var j = 0 
+    do {
+        document.write(weekdays[j])
+        j++;
+    } while (j < weekdays.length);
+
+    document.write("<br>"); 
+    // Using for of loop
+     for (const day of weekdays) {
+        document.write(day);
+     }
+
+        
     </script>
   </body>
 </html>
