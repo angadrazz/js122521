@@ -202,62 +202,95 @@
       /*Write a JavaScript Program that has stored weekdays in an Array. Display the weekdays name using
 for/while/do...while and for...of loop. Make sure to add appropriate comments each of the loop used. */
 
-    // Using for loop
-        var weekdays = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
-        for (let i = 0; i < weekdays.length; i++) {
-             document.write(weekdays[i]);
-            
-        }
-        document.write("<br>");
-    // Using while loop
-        var i = 0
-        while (i < weekdays.length) {
-            document.write(weekdays[i]);
-            i++;
-        }
-
-        document.write("<br>");
-    // Using Do While loop
-          var j = 0 
-    do {
-        document.write(weekdays[j])
-        j++;
-    } while (j < weekdays.length);
-
-    document.write("<br>"); 
-    // Using for of loop
-     for (const day of weekdays) {
-        document.write(day);
-     }
-
-    //  Write a javascript program to alert "your name" using a function named "display name".
-    function displayName() {
-        var yourName = "Angad Mandal"
-        alert("Hello" + " " + yourName)
-    }
-    displayName();
-
-    document.write("<br>");
-
-    //Write a javascript program to find the maximum number out of the given array of numbers using apply method.
-
-         var number = [20,30,54,55,52,785,25412,5632,5623,6532,652,3];
-         var maxNum = Math.max.apply(null, number);
-         document.write("This number of the Highest Number of array:" + " " + maxNum);
-
-         document.write("<br>");
-
-
-    //Write a javascript program that displays your name using a function. "getName" that resides within an object "person". Bind this function to a new variable named "showName", and display your name using "showName" method.
-    var person = {
-      getName: function(){
-        return "Angad_Mandal";
+      // Using for loop
+      var weekdays = [
+        "Sunday",
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday",
+      ];
+      for (let i = 0; i < weekdays.length; i++) {
+        document.write(weekdays[i]);
       }
-    };
-    var showName = person.getName;
-    document.write(showName());
+      document.write("<br>");
+      // Using while loop
+      var i = 0;
+      while (i < weekdays.length) {
+        document.write(weekdays[i]);
+        i++;
+      }
 
-        
+      document.write("<br>");
+      // Using Do While loop
+      var j = 0;
+      do {
+        document.write(weekdays[j]);
+        j++;
+      } while (j < weekdays.length);
+
+      document.write("<br>");
+      // Using for of loop
+      for (const day of weekdays) {
+        document.write(day);
+      }
+
+      //  Write a javascript program to alert "your name" using a function named "display name".
+      function displayName() {
+        var yourName = "Angad Mandal";
+        alert("Hello" + " " + yourName);
+      }
+      displayName();
+
+      document.write("<br>");
+
+      //Write a javascript program to find the maximum number out of the given array of numbers using apply method.
+
+      var number = [20, 30, 54, 55, 52, 785, 25412, 5632, 5623, 6532, 652, 3];
+      var maxNum = Math.max.apply(null, number);
+      document.write(
+        "This number of the Highest Number of array:" + " " + maxNum
+      );
+
+      document.write("<br>");
+
+      //Write a javascript program that displays your name using a function. "getName" that resides within an object "person". Bind this function to a new variable named "showName", and display your name using "showName" method.
+      var person = {
+        getName: function () {
+          return "Angad_Mandal";
+        },
+      };
+      var showName = person.getName;
+      document.write(showName());
+
+      document.write("<br>");
+
+      //object:-A javascript object is an having entity state and behavior. ex- car, bike , chair
+      //There are 3 type of object:- i.Object literal ii.directly new keyword iii.object constructor
+
+      //Creating an object using object literal
+
+      document.write("<h1> JavaScript Object by object literal </h1>")
+
+      personObj = { name: "Angad", age: 20, address: "Hsr Layout" };
+      document.write(personObj.name, personObj.age, personObj.address);
+
+      document.write("<br>");
+
+      //Creating an object using New Keyword/Instance
+      document.write("<h1> By creating instance of Object/New Keyword </h1>");
+      var employee = new Object();
+      employee.id=1001;
+      employee.name="angad";
+      employee.age=21;
+      employee.address="hsr_layout";
+      document.write(employee.id + " " + employee.name + " " +  employee.age + " " +  employee.address);
+
+      //Creating an object using Object Constructor
+
+      
     </script>
   </body>
 </html>
