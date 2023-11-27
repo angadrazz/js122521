@@ -6,14 +6,24 @@
     <title>Example of Method Object</title>
 </head>
 <body>
-    <script src="text/javascript">
+    <script type="text/JavaScript">
+        document.write("<h2>Creating an object method</h2>");
         function student(id,name,age,address){
         this.id=id;
         this.name=name;
         this.age=age;
         this.address=address;
+
+        this.updateAddress = updateAddress;
+        function updateAddress(newAddress) {
+            this.address = newAddress;
+        }
       }
       s = new student(1411,"Angad Mandal",21,"Hsr_Layout");
+      document.write(s.id + " " + s.name + " " + s.age + " " + s.address);
+      s.updateAddress("BTM Layout");
+      document.write("<br>"+s.id + " " + s.name + " " + s.age + " " + s.address);
+
     </script>
 </body>
 </html>
