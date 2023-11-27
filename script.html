@@ -288,8 +288,18 @@ for/while/do...while and for...of loop. Make sure to add appropriate comments ea
       employee.address="hsr_layout";
       document.write(employee.id + " " + employee.name + " " +  employee.age + " " +  employee.address);
 
-      //Creating an object using Object Constructor
+      document.write("<br>");
 
+      //Creating an object using Object Constructor
+      document.write("<h1>By using an Object constructor </h1>")
+      function student(id,name,age,address){
+        this.id=id;
+        this.name=name;
+        this.age=age;
+        this.address=address;
+      }
+      s = new student(1411,"Angad Mandal",21,"Hsr_Layout");
+      document.write(s.id + " " + s.name + " " + s.age + " " + s.address);
       
     </script>
   </body>
