@@ -77,6 +77,54 @@ document.writeln("<br/>screen.availHeight: "+screen.availHeight);
 document.writeln("<br/>screen.colorDepth: "+screen.colorDepth);  
 document.writeln("<br/>screen.pixelDepth: "+screen.pixelDepth);  
 
+//How to create an object in JavaScript
+
+// Object Literal:
+// The simplest way to create an object is by using the object literal notation, which involves enclosing key-value pairs within curly braces {}.
+
+
+var person = {
+    name: "John",
+    age: 30,
+    occupation: "Developer"
+};
+// Constructor Function:
+// You can create objects using constructor functions. This approach allows you to create multiple instances of objects with shared properties and methods.
+
+
+function Person(name, age, occupation) {
+    this.name = name;
+    this.age = age;
+    this.occupation = occupation;
+}
+
+var person = new Person("John", 30, "Developer");
+// Object.create:
+// The Object.create() method allows you to create a new object with a specified prototype object.
+
+var personPrototype = {
+    greet: function () {
+        console.log("Hello!");
+    }
+};
+
+var person = Object.create(personPrototype);
+person.name = "John";
+person.age = 30;
+// Class Syntax (ES6+):
+// With the introduction of classes in ECMAScript 2015 (ES6), you can create objects using a class constructor.
+
+
+class Person {
+    constructor(name, age, occupation) {
+        this.name = name;
+        this.age = age;
+        this.occupation = occupation;
+    }
+}
+
+var person = new Person("John", 30, "Developer");
+
     </script>
 </body>
 </html>
