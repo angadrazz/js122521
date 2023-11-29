@@ -36,18 +36,28 @@
 
       //Using Create Method
 
-      function student() {
-        this.name = "Angad",
-        this.season = "Winter";
-      }
+    //   function student() {
+    //     this.name = "Angad",
+    //     this.season = "Winter";
+    //   }
 
-      function newStudent() {
-        student.call(this);
-      }
+    //   function newStudent() {
+    //     student.call(this);
+    //   }
 
-      newStudent.prototype = object.create(student.prototype);
-      const app = new newStudent();
-      console.log(app);
+    //   newStudent.prototype = object.create(student.prototype);
+    //   var app = new newStudent();
+    //   console.log(app);
+
+    document.write("<h3>We are explore javascript Navigator Object</h3>")
+document.writeln("<br/>navigator.appCodeName: "+navigator.appCodeName);
+document.writeln("<br/>navigator.appName: "+navigator.appName);
+document.writeln("<br/>navigator.appVersion: "+navigator.appVersion);
+document.writeln("<br/>navigator.cookieEnabled: "+navigator.cookieEnabled);
+document.writeln("<br/>navigator.language: "+navigator.language);
+document.writeln("<br/>navigator.userAgent: "+navigator.userAgent);
+document.writeln("<br/>navigator.platform: "+navigator.platform);
+document.writeln("<br/>navigator.onLine: "+navigator.onLine);
 
     </script>
 </body>
