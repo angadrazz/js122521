@@ -24,6 +24,31 @@
       s.updateAddress("BTM Layout");
       document.write("<br>"+s.id + " " + s.name + " " + s.age + " " + s.address);
 
+      //Using Assign() method
+      var obj={
+        name: "Angad",
+        lastName: "Mandal"
+      }
+
+      var obj1 = Object.assign({age:21,state:"Delhi"}, obj);
+
+      console.log(obj,obj1);
+
+      //Using Create Method
+
+      function student() {
+        this.name = "Angad",
+        this.season = "Winter";
+      }
+
+      function newStudent() {
+        student.call(this);
+      }
+
+      newStudent.prototype = object.create(student.prototype);
+      const app = new newStudent();
+      console.log(app);
+
     </script>
 </body>
 </html>
