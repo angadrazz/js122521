@@ -43,6 +43,10 @@
 
       var newFlatArray = arrFlat.flat();
       document.write("This array is Flat: " + newFlatArray);
+
+      document.write("<br>" + "<h2>FlatMap array()</h2>");
+      var flatMap1 = newFlatArray.flatMap(x => [x/2]);
+      document.write(flatMap1);
     </script>
   </body>
 </html>
