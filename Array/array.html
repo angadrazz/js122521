@@ -11,6 +11,10 @@
         document.write("<h2>Concat Array()</h2>")
         var array1 = [10,20,30,40,50,60];
         var array2 = [70,80,90,100,110,120];
+        function check(value) {
+            return value > 60;
+            
+        }
         var concatedarray = array1.concat(array2);
         document.write(array1+ "<br>");
         document.write(array2 + "<br>");
@@ -20,6 +24,19 @@
         var copyarrray = ["HTML", "CSS","JavaScript","Java"];
         var newCopyArray = copyarrray.copyWithin(1,2,3);
         document.write(newCopyArray);
+
+        document.write("<br>" +  "<h2>Entries array()</h2>");
+        var entries = copyarrray.entries();
+
+        //Using for of loop
+
+        for (const value of entries) {
+            document.writeln(value);
+        }
+
+        document.write("<br>" + "<h2>Every ()</h2>")
+        document.write("Check for every element in array arr2 if it is 90 : " + array2.every(check));
+
 
 
     </script>
