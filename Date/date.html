@@ -6,10 +6,31 @@
     <title>Example of Date and Time</title>
 </head>
 <body>
-    <p>Today Date and Time is: <span id="txt" style="color: yellow;"></span></p>
+    <p>Today Date and Time is: <span id="txt1" style="color: yellow;"></span></p>
+    Current Time: <span id="txt"></span> 
     <script type="text/JavaScript">
         var todayDate = new Date();
-        document.getElementById('txt').innerHTML=todayDate;
+        document.getElementById('txt1').innerHTML=todayDate;
+
+        window.onload=function(){getTime();}  
+function getTime(){  
+var today=new Date();  
+var h=today.getHours();  
+var m=today.getMinutes();  
+var s=today.getSeconds();  
+// add a zero in front of numbers<10  
+m=checkTime(m);  
+s=checkTime(s);  
+document.getElementById('txt').innerHTML=h+":"+m+":"+s;  
+setTimeout(function(){getTime()},1000);  
+}  
+//setInterval("getTime()",1000);//another way  
+function checkTime(i){  
+if (i<10){  
+  i="0" + i;  
+ }  
+return i;  
+}  
     </script>
 </body>
 </html>
