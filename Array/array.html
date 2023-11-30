@@ -47,6 +47,13 @@
       document.write("<br>" + "<h2>FlatMap array()</h2>");
       var flatMap1 = newFlatArray.flatMap(x => [x/2]);
       document.write(flatMap1);
+
+      document.write("<br>" + "<h2>filter()</h2>")
+      function filters(value) {
+          return value > 25;
+      }
+      var newFilters = arrFlat.filter(filters); 
+      document.write("this is ")
     </script>
   </body>
 </html>
