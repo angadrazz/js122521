@@ -31,9 +31,30 @@
 // 1. Create a new string using splice method on the existing string that contains "LearnVern" only.
 // 2. Remove all the unnecessary spaces entered in the string, using appropriate method.
 // 3. Add another string "LearnVern is an amazing place to learn Javascript". using concatenation related method.
- var testing = "             This is LearnVern               ";
- var result = testing.trim();
- document.write("<br>" + "statement has trim () method:" + " " + result);
+
+// write a javascript program and create an object for todays date. 
+// 1. Get the date and show it on the document.
+// 2. Show date, month and year in dd/mm/yyyy format.
+
+//Creating a new date object for todays date
+const today = new Date();
+// Print the todays date
+document.write("<br>" + "Print the today's date:" + today);
+//Extracte the indivisual coponents of date
+// const day = today.getDate();
+// const month = today.getMonth()  +1;
+// const year = today.getFullYear();
+//Create an object to store today's date
+const todayObject = {
+    day: today.getDate(),
+ month : today.getMonth()  +1,
+year : today.getFullYear()
+};
+// Format the date to dd/mm/yyyy
+const formattedDate = `${todayObject.day}/${todayObject.month}/${todayObject.year}`;
+//Print the today's Object
+
+document.write("<br>" + formattedDate);
     </script>
 </body>
 </html>
