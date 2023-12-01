@@ -17,6 +17,16 @@
         }
         //Display the object data in one statement
         document.write("firstName:" + Person.firstName + "<br>" + "lastName:" + Person.lastName + "<br>" + "age:" + Person.age)
+
+        //Create an Array using Constructor Method
+        const array1 = new Array(10,20,30,35,40,45,50,55,60,65);
+        document.write("<br>" + "Display the array data:" + " " + array1);
+        function greater(value) {
+            return value > 40;
+        }
+        document.write("<br>" + "This array is display only greater than 40 " + array1.filter(greater));
+        var maxNum = Math.max(...array1);
+        document.write("<br>" + "Maximum Number in the array: " + maxNum);
     </script>
 </body>
 </html>
