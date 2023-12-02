@@ -65,6 +65,31 @@ var maxNum = Math.max(...arrayNum);
 document.writeln("<br>" + "Maxmum number of  value on the array: " + maxNum);
 var minNum = Math.min(...arrayNum);
 document.writeln("<br>" + "Minimum number of value on the array: " + minNum);
+//Creating a new variable of x
+var x = 1.5;
+var sin1 = Math.sin(x);
+document.writeln("<br>" + "This value of sin: " + sin1);
+var cos2 = Math.cos(x);
+document.writeln("<br>" + "This value of cos: " + cos2);
+var tan3 = Math.tan(x);
+document.writeln("<br>" + "This value of tan: " + tan3 + "<br>");
+
+// Write a javascript program and check if below mention inputs are numbers or not using number methods appropriate method.ex 1002
+
+// Prompt the user for input
+var userInput = prompt("Enter a number:");
+
+// Convert the input to a number using the Number constructor
+var numberInput = Number(userInput);
+
+// Check if the input is a valid number using Number.isNaN()
+if (Number.isNaN(numberInput)) {
+    document.writeln(userInput + " is not a number.");
+} else {
+    document.writeln(userInput + " is a number.");
+}
+
+
     </script>
 </body>
 </html>
