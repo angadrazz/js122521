@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Example of Browser Object Model</title>
+</head>
+<body>
+    <script type="text/javascript">
+    // Write a javascript program which accept name and age of user using a prompt box and show it on the document. -->
+        var userName = prompt("Enter Your Name");
+        var userAge = prompt("Enter your Age");
+        var displayUserInformation = "Hello," + userName +  "You are" + userAge + "years old.";
+        document.write("<h2>" + displayUserInformation + "</h2>");
+
+    // Write a javascript program that show an alert box with your name after 5 seconds of waiting period.
+     var userNames = "Angad Kumar Mandal";
+     setTimeout(() => {
+        alert(userNames)
+     }, 5000);
+     function showAlert() {
+        alert("Hello! I'm ChatGPT.");
+     }
+     setTimeout(showAlert ,  8000);
+
+    
+    </script>
+</body>
+</html>
