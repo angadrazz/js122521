@@ -6,6 +6,9 @@
     <title>Example of Browser Object Model</title>
 </head>
 <body>
+
+    <button onclick="goBack()">Previous</button>
+    <button onclick="goNexxt">New Page</button>
     <script type="text/javascript">
     // Write a javascript program which accept name and age of user using a prompt box and show it on the document. -->
         var userName = prompt("Enter Your Name");
@@ -18,12 +21,39 @@
      setTimeout(() => {
         alert(userNames)
      }, 5000);
+     //Method 2
      function showAlert() {
         alert("Hello! I'm ChatGPT.");
      }
      setTimeout(showAlert ,  8000);
 
-    
+    // Write a JavaScript program that can redirect until last 5 visited webpages and also can jump to specified webpage in a browser.
+    function goBack() {
+        history.back();
+    }
+
+    function goNexxt() {
+        history.forward();
+    }
+
+    //Write a javaScript program that prints below mentioned information on the screen.
+    document.writeln("Browser Name : " + navigator.appCodeName);
+    document.writeln("<br>" + "Browser Version : " + navigator.appVersion);
+    document.writeln("<br>" + "Cookies enable or not : " + navigator.cookieEnabled);
+    document.writeln("<br>" + "Installed PlugIn : " + navigator.plugins);
+    document.writeln("<br>" + "User Agent : " + navigator.userAgent);
+    document.writeln("<br>" + "Languages detect : " + navigator.languages);
+    document.writeln("<br>" + "Languages detect : " + navigator.doNotTrack);
+    document.writeln("<br>" + "Languages detect : " + navigator.geolocation);
+    document.writeln("<br>" + "Languages detect : " + navigator.onLine);
+
+    //Write a javascript program that prints below mentioned information on the screen.
+    document.writeln("<br>" + "Browser Height : " + screen.height);
+    document.writeln("<br>" + "Browser width : " + screen.width);
+    document.writeln("<br>" + "Browser availHeight : " + screen.availHeight);
+    document.writeln("<br>" + "Browser availWidth : " + screen.availWidth);
+
+
     </script>
 </body>
 </html>
