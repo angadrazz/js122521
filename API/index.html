@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>API fetch</title>
+  </head>
+  <body>
+    <h2 style="text-align: center">
+      We have learning Fetch API's as well as methods
+    </h2>
+    <script>
+      const URL = "https://cat-fact.herokuapp.com/facts";
+
+      const getFacts = async () => {
+        console.log("loading data.......");
+        let response = await fetch(URL);
+        console.log(response);
+        let receivedData = await response.json();
+        console.log(receivedData);
+      };
+
+      getFacts();
+
+    </script>
+  </body>
+</html>
