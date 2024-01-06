@@ -9,8 +9,12 @@
     <h2 style="text-align: center">
       We have learning Fetch API's as well as methods
     </h2>
+    <button id="btn">See the Details</button>
     <script>
       const URL = "https://cat-fact.herokuapp.com/facts";
+      const factPara = document.querySelector("#fact");
+      const button = document.querySelector("#btn");
+      button.addEventListener("click", getFacts);
 
       const getFacts = async () => {
         console.log("loading data.......");
@@ -18,7 +22,9 @@
         console.log(response);
         let receivedData = await response.json();
         console.log(receivedData);
+        factPara.innerText = receivedData[0].text;
       };
+
 
       getFacts();
 
